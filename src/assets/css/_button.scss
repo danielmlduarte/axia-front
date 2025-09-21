@@ -1,0 +1,87 @@
+// @mixin ButtonPrimary($class, $color, $background, $focus, $active) {
+//     .btn-#{$class} {
+//         background-color: $background!important;
+//         color: $color!important;
+//         border-color: $background!important;
+//         transition: .2s;
+//         svg {
+//             stroke: $color;
+//         }
+//         &:hover {
+//             background-color: $active!important;
+//         }
+//         &:focus {
+//             box-shadow: 0 0 0 5px $focus!important;
+//         }
+//         &:active {
+//             background-color: $active!important;
+//             box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
+//         }
+//         &:disabled {
+//             background-color: $nmidfour!important;
+//             border-color: $nmidfour!important;
+//             color: $ndarkfour!important;
+//             svg {
+//                 stroke: $ndarkfour!important;
+//             }
+//             &:hover,
+//             &:focus,
+//             &:active {
+//                 outline: 0!important;
+//                 box-shadow: none!important;
+//             }
+//         }
+//     }
+// }
+
+// @mixin ButtonOutline($class, $color, $border, $hover, $borderactive) {
+//     .btn-outline-#{$class} {
+//         border: 1px solid $border!important;
+//         background-color: transparent!important;
+//         color: $color!important;
+//         svg {
+//             stroke: $color;
+//         }
+//         &:hover {
+//             background-color: $hover!important;
+//         }
+//         &:focus {
+//             box-shadow: 0 0 0 5px $border!important;
+//             border-color: transparent!important;
+//         }
+//         &:active {
+//             color: $borderactive!important;
+//             border-color: $borderactive!important;
+//             box-shadow: none!important;
+//             background-color: $hover!important;
+//             svg {
+//                 stroke: $borderactive;
+//             }
+//         }
+//         &:disabled {
+//             background-color: transparent!important;
+//             border-color: $nmidthree!important;
+//             color: $nmidthree!important;
+//             svg {
+//                 stroke: $nmidthree!important;
+//             }
+//             &:hover,
+//             &:focus,
+//             &:active {
+//                 outline: 0!important;
+//                 box-shadow: none!important;
+//             }
+//         }
+//     }
+// }
+
+// //PRIMARY
+// // @include ButtonPrimary($class, $color, $background, $focus, $active)
+// @include ButtonPrimary('blue', $white, $bluefour, $bluetwo, $bluesix);
+// @include ButtonPrimary('green', $white, $greenfour, $greentwo, $greensix);
+// //OUTLINE
+// // @include ButtonOutline($class, $color, $border, $hover, $borderactive)
+// @include ButtonOutline('blue', $bluefour, $bluetwo, $blueone, $bluesix);
+// @include ButtonOutline('green', $greenfour, $greentwo, $greenone, $greensix);
+// @include ButtonOutline('red', $sredfour, $sredtwo, $sredone, $sredfive);
+// @include ButtonOutline('grey', $ndarkfour, $nmidfour, $nlightone, $ndarkfour);

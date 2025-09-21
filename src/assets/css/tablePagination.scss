@@ -1,0 +1,140 @@
+.table-pagination {
+  font-size: 0.875rem;
+  border-collapse: collapse;
+  width: 100%;
+
+  td,
+  th {
+    white-space: nowrap;
+    text-align: center;
+    padding: 8px;
+    &.br {
+      border-right: 1px dashed #D1D4D6;
+    }
+    &.table-upper-head-no-border {
+      border: none;
+    }
+
+  }
+
+  th:not(.table-upper-head) {
+    border-bottom: 1px dashed #D1D4D6;
+    border-top: 1px dashed #D1D4D6;
+  }
+
+  tr:not(.tfootPagination), tr:not(.table-totalizer-container) {
+    border-left: 1px dashed #D1D4D6;
+    border-right: 1px dashed #D1D4D6;
+  }
+
+  tr {
+    &.tfootPagination, &.table-totalizer-container {
+      border-left: none;
+      border-right: none;
+    }
+    &.table-upper-head-container {
+      border: none;
+    }
+  }
+
+  tbody {
+    color: #212121;
+    td:not(.row-first-value) {
+      color: #757575;
+    }
+  }  
+
+  tfoot {
+    border-top: 1px dashed #D1D4D6;
+    border-bottom: 1px dashed #D1D4D6;
+    p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    tr {
+      &.table-totalizer-container {
+        border-bottom: 1px dashed #D1D4D6;
+        .table-totalizer-value {
+          span {
+            gap: 6px;
+          }
+          &.br {
+            border-right: 1px dashed #D1D4D6;
+          }
+          .info-icon {
+            margin-bottom: -4px;
+          }
+        }
+      }
+    }
+  }
+
+  .MuiTablePagination-select {
+    margin: 2.5px 4px;
+    padding: 6px 6px 4.1px 8.5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #344767;
+  }
+
+  .MuiTablePagination-actions {
+    button {
+      color: #344767;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      span {
+        display: none;
+      }
+      &:disabled {
+        opacity: 0.5;
+      }
+      &:first-child::after, &:last-child::after {
+        content: url('../imgs/arrowBlue.svg');
+      }
+      &:first-child {
+        transform: rotate(90deg);
+      }
+      &:last-child {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+.MuiTablePagination-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.MuiTablePagination-selectLabel {
+  margin: 0;
+}
+
+.MuiTablePagination-displayedRows {
+  margin: 0;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
+.MuiTablePagination-spacer {
+  display: none;
+}
+
+.MuiTablePagination-actions {
+  display: flex;
+  gap: 0.25rem;
+}

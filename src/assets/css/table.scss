@@ -1,0 +1,173 @@
+.MuiDataGrid-root {
+  border: none !important;
+  font-family: 'Open Sans', sans-serif !important;
+  .MuiDataGrid-toolbarContainer {
+    justify-content: end;
+    margin-bottom: 16px;
+  }
+  .MuiDataGrid-columnHeaders {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    .MuiDataGrid-columnHeaderTitle {
+      padding-right: 2px;
+      text-align: left;
+      font-size: 12px;
+      color: #344767;
+      font-weight: bold !important;
+      line-height: 15px;
+      max-height: 30px;
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .MuiDataGrid-columnHeader {
+    .MuiCheckbox-root {
+      color: #e7ebee;
+      &::before {
+        content: "";
+        width: 16px;
+        border-top: 2px solid #e7ebee;
+        border-right: 2px solid #e7ebee;
+        border-radius: 2px;
+        height: 16px;
+        position: fixed;
+        z-index: -1;
+        top: 17px;
+        left: 18px;
+      }
+      &.Mui-checked {
+        color: #b2bf00;
+        &::before {
+          content: "";
+          border-top: 2px solid #b2bf00;
+          border-right: 2px solid #b2bf00;
+        }
+      }
+    }
+    &:focus-within {
+      outline: none !important;
+    }
+  }
+  .MuiDataGrid-iconSeparator {
+    color: transparent !important;
+  }
+  .MuiDataGrid-sortIcon {
+    display: none;
+  }
+  .MuiDataGrid-menuIcon {
+    display: block;
+  }
+  .MuiDataGrid-cellCheckbox {
+    .MuiCheckbox-root {
+      color: #e7ebee;
+      &.Mui-checked {
+        color: #b2bf00;
+      }
+    }
+  }
+}
+
+.col-body__1atf {
+  background-color: #EFEFEF40;
+  &.col-body__start {
+    border-left: 1px solid white !important;
+  }
+  &.col-body__end {
+    border-right: 1px solid white !important;
+  }
+}
+
+.col-header__1atf {
+  background-color: #9D283533;
+  &.col-header__start {
+    border-radius: 8px 0 0 0;
+    border-left: 1px solid white !important;
+  }
+  &.col-header__end {
+    border-radius: 0 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+  &.col-header__full {
+    border-left: 1px solid white !important;
+    border-radius: 8px 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+}
+
+.col-body__inseminada, .col-body__male, .col-body__female {
+  background-color: #EFEFEF40;
+  &.col-body__start {
+    border-left: 1px solid white !important;
+  }
+  &.col-body__end {
+    border-right: 1px solid white !important;
+  }
+}
+
+.col-header__inseminada {
+  background-color: #eaf097;
+  &.col-header__start {
+    border-radius: 8px 0 0 0;
+    border-left: 1px solid white !important;
+  }
+  &.col-header__end {
+    border-radius: 0 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+  &.col-header__full {
+    border-left: 1px solid white !important;
+    border-radius: 8px 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+}
+
+.col-header__male {
+  background-color: #DFE5E8;
+  &.col-header__start {
+    border-radius: 8px 0 0 0;
+    border-left: 1px solid white !important;
+  }
+  &.col-header__end {
+    border-radius: 0 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+  &.col-header__full {
+    border-left: 1px solid white !important;
+    border-radius: 8px 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+}
+
+.col-header__female {
+  background-color: #F0F2CC;
+  &.col-header__start {
+    border-radius: 8px 0 0 0;
+    border-left: 1px solid white !important;
+  }
+  &.col-header__end {
+    border-radius: 0 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+  &.col-header__full {
+    border-left: 1px solid white !important;
+    border-radius: 8px 8px 0 0;
+    border-right: 1px solid white !important;
+  }
+}
+
+.columnHeaderTitle-custom {
+  margin-right: 7px;
+  padding-right: 2px;
+  text-align: left;
+  font-size: 12px;
+  color: #344767;
+  font-weight: bold !important;
+  line-height: 15px;
+  max-height: 30px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

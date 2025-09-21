@@ -1,0 +1,66 @@
+@mixin defineColor($class, $color) {
+    .c-#{$class} {
+        color: $color !important;
+        svg {
+            stroke: $color
+        }
+    }
+    .c-#{$class}-event:hover,
+    .c-#{$class}-event:active,
+    .c-#{$class}-event:focus {
+        color: $color !important;
+        svg {
+            stroke: $color
+        }
+    }
+    .bgc-#{$class} {
+        background-color: $color !important;
+    }
+    .bgc-#{$class}-event:hover,
+    .bgc-#{$class}-event:active,
+    .bgc-#{$class}-event:focus {
+        background-color: $color !important;
+    }
+    .bdc-#{$class} {
+        border-color: $color !important;
+    }
+    .bdc-#{$class}-event:hover,
+    .bdc-#{$class}-event:active,
+    .bdc-#{$class}-event:focus {
+        border-color: $color !important;
+    }
+}
+
+//Primary
+@include defineColor('p-brand-01', $p-brand-01);
+@include defineColor('p-brand-02', $p-brand-02);
+@include defineColor('p-light', $p-light);
+@include defineColor('p-dark', $p-dark);
+//Secondary
+@include defineColor('s-verde', $s-verde);
+@include defineColor('s-verde-base ', $s-verde-base);
+@include defineColor('s-verde-borda-botao', $s-verde-borda-botao);
+@include defineColor('s-verde-portal', $s-verde-portal);
+//Base
+@include defineColor('b-cinza-texto', $b-cinza-texto);
+@include defineColor('b-cinza-texto-modal', $b-cinza-texto-modal);
+@include defineColor('b-cinza-icons', $b-cinza-icons);
+@include defineColor('b-bg-botao', $b-bg-botao);
+@include defineColor('b-cinza-bg-modais', $b-cinza-bg-modais);
+@include defineColor('b-cinza-borda-input', $b-cinza-borda-input);
+@include defineColor('b-fieldset-modais', $b-fieldset-modais);
+@include defineColor('b-fundo-filtro', $b-fundo-filtro);
+@include defineColor('b-cinza-transp', $b-cinza-transp);
+@include defineColor('b-cinza-antigo', $b-cinza-antigo);
+@include defineColor('b-cinza-fundo', $b-cinza-fundo);
+@include defineColor('b-cinza-grafico', $b-cinza-grafico);
+//Others
+@include defineColor('o-erro', $o-erro);
+@include defineColor('o-sucesso', $o-sucesso);
+@include defineColor('o-chip-azul', $o-chip-azul);
+@include defineColor('o-chip-roxo', $o-chip-roxo);
+@include defineColor('o-vermelho-toast', $o-vermelho-toast);
+@include defineColor('o-verde-toast', $o-verde-toast);
+@include defineColor('o-verde-range', $o-verde-range);
+@include defineColor('o-link', $o-link);
+@include defineColor('o-portal-novidades', $o-portal-novidades);

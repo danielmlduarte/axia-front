@@ -1,0 +1,62 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: $b-cinza-fundo;
+}
+
+code {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+a {
+  color: currentColor;
+  &:hover,
+  &:active,
+  &:focus {
+      text-decoration: none;
+      color: currentColor;
+  }
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold,
+b,
+strong {
+  font-weight: 700;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.pointer {
+  cursor: pointer!important;
+}

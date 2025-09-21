@@ -1,0 +1,183 @@
+.print-page__header, .print-page__footer, .separator-dot, .separator-dotted-edges {
+  display: none !important;
+}
+
+.print-page {
+  > br {
+    display: none !important;
+  }
+}
+
+.print-page__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px 20px 5px 10px;
+}
+
+.print-page__logo {
+  width: 64px;
+  margin: 10px;
+}
+
+.print-page__title {
+  font-weight: bold;
+  font-size: 10px;
+  white-space: nowrap;
+  color: #212121;
+  margin: 0;
+  height: 10px;
+}
+
+.print-page__property-name, .print-page__time-period {
+  font-size: 9.5px;
+  color: #212121;
+  margin: 0;
+  height: 10px;
+}
+
+.print-page__filters {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  height: 21px;
+  margin: 9px 10px 10.5px 22px !important;
+  padding: 4px 12px 5px 11px;
+  background-color: #efefef;
+  > p {
+    color: #212121;
+    font-size: 9.5px;
+    height: 0px;
+    margin: initial;
+  }
+}
+
+.print-page__footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 30px;
+  bottom: 20px;
+  margin: auto;
+  width: 80%;
+  padding: 0 20px;
+  > p {
+    color: #212121;
+    font-size: 10px;
+  }
+}
+
+.button-corner-position {
+  position: absolute;
+  top: 22px;
+  right: 55px;
+}
+
+.separator-dot {
+  &::before {
+    content: "•";
+    font-size: 2em;
+    position: relative;
+    top: -15px;
+    color: #0b3c56;
+  }
+}
+
+.separator-dotted-edges {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 95%;
+  position: relative;
+  height: 1px;
+  background-image: linear-gradient(to right, #0b3c56, #0b3c56, #0b3c56);
+
+  &::before, &::after {
+    content: "•";
+    font-size: 2em;
+    position: relative;
+    top: -22px;
+    color: #0b3c56;
+  }
+  
+  &::before {
+    left: -5px;
+  }
+  
+  &::after {
+    right: -5px;
+  }
+}
+
+@media print {
+  .print-page__header, .print-page__footer, .separator-dot, .separator-dotted-edges {
+    display: flex !important;
+  }
+
+  .hide-to-print, .MuiAccordionSummary-expandIconWrapper, .MuiTablePagination-root, .chart-title {
+    display: none !important;
+  }
+
+  .MuiAccordionSummary-gutters {
+    min-height: 0 !important;
+  }
+
+  .vertical-chart-title {
+    font-size: 14px;
+  }
+
+  .vertical-chart-container {
+    background-color: white !important;
+  }
+
+  .vertical-chart-bottom-description-container {
+    display: none;
+  }
+
+  .vertical-chart-container {
+    .recharts-responsive-container {
+      margin-top: -80px;
+      height: 300px !important;
+    }
+  }
+
+  .sumary-container {
+    justify-content: flex-start !important;
+  }
+
+  .recharts-surface, .recharts-wrapper { 
+    width: 98% !important;
+  }
+
+  .chart-grid {
+    flex-basis: 98% !important;
+    max-width: 98% !important;
+    width: 98% !important;
+  }
+
+  .chart-conception-summary, .chart-iatf-summary {
+    flex: 1 !important;
+  }
+
+  .chart-conception-summary {
+    margin-top: 50px !important;
+  }
+
+  .chart-iatf-summary {
+    margin-top: 88px !important;
+    max-width: 66.333333% !important;
+  }
+
+  .bgc-b-cinza-grafico {
+    background-color: #fff !important;
+  }
+  
+  .print-page {
+    padding: 20px 30px !important;
+    max-width: 95% !important;
+    width: 95% !important;
+    > br {
+      display: inline !important;
+    }
+  }
+}
