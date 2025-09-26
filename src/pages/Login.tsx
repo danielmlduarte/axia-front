@@ -38,6 +38,10 @@ function Login() {
     setSenhaState(value)
   }
 
+  const handleTesteButton = () => {
+    navigate("/disc");
+  };
+
   const handleLoginButton = useCallback(async () => {
     if (!loginState || !senhaState) return;
     setLoading(true);
@@ -96,6 +100,9 @@ function Login() {
                 autoComplete='on'
               />
               <Button onClick={handleLoginButton}>Entrar</Button>
+              <Grid mt={8}>
+                <Button onClick={handleTesteButton}>Fazer teste DISC</Button>
+              </Grid>
             </div>
         </Grid>
         :
