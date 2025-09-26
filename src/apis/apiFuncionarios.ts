@@ -75,7 +75,7 @@ async function postFuncionario(postBody: Funcionario) {
 
 async function postFotoFuncionario(formData: FormData, id: string) {
   try {
-    const response = await axios.post(
+    const response = await api.post(
       `${process.env.REACT_APP_API}/funcionarios/foto/${id}`,
       formData,
       {
@@ -84,6 +84,7 @@ async function postFotoFuncionario(formData: FormData, id: string) {
         },
       }
     );
+
 
     // Atualizar avatar com a URL salva no servidor
     if (response.data.path) {
