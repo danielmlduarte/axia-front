@@ -52,8 +52,8 @@ function TesteDISC() {
   };
 
   const handleSubmit = async () => {
-    //const result = await postDisc(payload)
-    //if (result.status === 200) {
+    const result = await postDisc(payload)
+    if (result.status === 200) {
       setNotificationMessage("Respostas enviadas com sucesso!");
       setStateNotification(true);
 
@@ -67,12 +67,10 @@ function TesteDISC() {
         return prev
       })[0] || ""
 
-      console.log(maiorLetra)
-
       setDescricao(resultados.find((resultado) => resultado.letra === maiorLetra[1])!.descricao)
       setModalOpen(true)
 
-    //}
+    }
   };
 
   const opacity = Math.max(1 - scrollY / 300, 0);
